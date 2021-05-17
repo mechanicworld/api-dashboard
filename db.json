@@ -1,0 +1,16 @@
+{
+  "apis": [
+    {
+      "title": "json-server",
+      "category": "Data access",
+      "info": "Hunter API makes it easy to find or verify professional email adress",
+      "id": 2
+    },
+    {
+      "title": "json-server",
+      "category": "Data access",
+      "info": "Hunter API makes it easy to find or verify professional email adress",
+      "id": 3
+    }
+  ]
+}
