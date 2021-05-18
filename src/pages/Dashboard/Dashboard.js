@@ -1,6 +1,7 @@
 import React from 'react'
-import ApiCard from '../components/ApiCard/ApiCard'
-import SearchBar from '../components/SearchBar/SearchBar'
+import ApiCard from '../../components/ApiCard/ApiCard'
+import SearchBar from '../../components/SearchBar/SearchBar'
+import style from './Dashboard.module.css'
 
 function Dashboard() {
   return (

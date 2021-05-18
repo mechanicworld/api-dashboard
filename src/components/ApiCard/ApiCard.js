@@ -8,7 +8,7 @@ import style from './ApiCard.module.css'
 function ApiCard() {
   return (
     <div>
-      <Card style={{ width: '24rem' }}>
+      <Card className={` ${style.card} `} style={{ width: '24rem' }}>
         <Card.Body className={` ${style.body} `}>
           <div className="row">
             <div className="col-3">
