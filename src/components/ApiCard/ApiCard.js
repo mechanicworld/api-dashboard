@@ -2,35 +2,34 @@ import React from 'react'
 
 import Card from 'react-bootstrap/Card'
 import Buttons from '../Buttons/Buttons'
-import test from '../../assets/test.png'
-import style from './ApiCard.module.css'
 
-function ApiCard() {
+import style from './ApiCard.module.css'
+import image from '../../assets/test.png'
+
+function ApiCard( {item} ) {
+  
   return (
-    <div>
-      <Card className={` ${style.card} `} style={{ width: '24rem' }}>
+    <>
+      <Card className={` ${style.card} col-xl-4 col-lg-6 col-md-6 col-sm-6 col-xs-10 `} style={{ width: '24rem' }}>
         <Card.Body className={` ${style.body} `}>
           <div className="row">
             <div className="col-3">
-              <img src={test} />
+              <img src= {image} />
             </div>
             <div className="col-9">
-              <Card.Title>Card Title</Card.Title>
-              <Card.Subtitle className={` mb-2 text-muted ${style.subtitle} `}>Card Subtitle</Card.Subtitle>
+              <Card.Title> { item.title } </Card.Title>
+              <Card.Subtitle className={` mb-2 text-muted ${style.subtitle} `}> { item.category } </Card.Subtitle>
               <Card.Text className={` ${style.text} `}>
-                Some quick example text to build on the card title and make up the bulk of
-                the card's content.
+                { item.info }
           </Card.Text>
             </div>
           </div>
           <div className={`mt-3 row d-flex  justify-content-around`}>
             <Buttons />
           </div>
-
-
         </Card.Body>
       </Card>
-    </div>
+    </>
   )
 
 }
