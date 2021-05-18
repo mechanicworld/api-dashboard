@@ -6,15 +6,10 @@ import style from './Buttons.module.css'
 
 function Buttons() {
   return (
-    <div>
-      <Col>
-        <Row>
-          <Button className={style.bookmarks} >Bookmarks</Button>
-          <Button className={style.allDocs} >All Docs</Button>
-
-        </Row>
-      </Col>
-    </div>
+    <>
+      <Button className={`col-4 p-1 m-2 ${style.bookmarks}`} >Bookmarks</Button>
+      <Button className={`col-4 p-1 m-2 ${style.allDocs}`} >All Docs</Button>
+    </>
   )
 }
 
