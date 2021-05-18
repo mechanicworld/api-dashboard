@@ -11,6 +11,7 @@ function Buttons() {
         <Row>
           <Button className={style.bookmarks} >Bookmarks</Button>
           <Button className={style.allDocs} >All Docs</Button>
+
         </Row>
       </Col>
     </div>

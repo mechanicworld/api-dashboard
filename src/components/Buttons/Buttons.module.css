@@ -1,3 +1,7 @@
+*{
+  box-sizing: border-box;
+}
+
 :root {
   --darkBlue: rgb(23, 23, 49) ;
   --white: rgb(255, 255, 255);
@@ -9,6 +13,7 @@
   color: var(--white) !important;
   width: 50%;
   font-size: 0.8rem !important;
+  
 }
 
 .bookmarks{
@@ -17,4 +22,8 @@
   color: var(--darkBlue) !important;
   width: 50%;
   font-size: 0.8rem !important;
+}
+
+Button:hover{
+  transform: scale(1.1);
 }
