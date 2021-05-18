@@ -1,0 +1,28 @@
+:root {
+  --darkBlue: rgb(23, 23, 49);
+  --grey: rgb(148, 144, 144);
+  --white: rgb(255, 255, 255);
+}
+
+.searchbar {
+  background-color:var(--white);
+  width: 50%;
+  height: 2.7rem;
+  border-radius: 4rem !important;
+  border: 1px solid rgba(167, 165, 165, 0.63);
+}
+
+.icon {
+  color: var(--grey);
+}
+
+.input {
+  border: none !important;
+  width: 100%;
+  height: 2.6rem;
+  font-size: 0.8rem;
+}
+
+.input:focus {
+  outline: none;
+}
