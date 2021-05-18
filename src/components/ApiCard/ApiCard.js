@@ -6,7 +6,9 @@ import Buttons from '../Buttons/Buttons'
 import style from './ApiCard.module.css'
 import image from '../../assets/test.png'
 
-function ApiCard( {item} ) {
+function ApiCard( {item, setApiCardList} ) {
+
+  
   
   return (
     <>
@@ -14,7 +16,7 @@ function ApiCard( {item} ) {
         <Card.Body className={` ${style.body} `}>
           <div className="row">
             <div className="col-3">
-              <img src= {image} />
+              <img src= {image} alt={`${item.title}`} />
             </div>
             <div className="col-9">
               <Card.Title> { item.title } </Card.Title>
@@ -25,7 +27,7 @@ function ApiCard( {item} ) {
             </div>
           </div>
           <div className={`mt-3 row d-flex  justify-content-around`}>
-            <Buttons />
+            <Buttons item={item} setApiCardList={setApiCardList} />
           </div>
         </Card.Body>
       </Card>

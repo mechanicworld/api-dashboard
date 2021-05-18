@@ -4,7 +4,7 @@
       "title": "Hunter",
       "category": "Data access",
       "info": "Hunter API makes it easy to find or verify professional email adress",
-      "bookmarked":true,
+      "bookmarked": false,
       "image": "../../assets/test.png",
       "id": 1
     },
@@ -12,7 +12,7 @@
       "title": "Twilio",
       "category": "Data access",
       "info": "Send and receive SMS and MMS messages as well as query meta-data about text messages",
-      "bookmarked":false,
+      "bookmarked": false,
       "image": "test",
       "id": 2
     }

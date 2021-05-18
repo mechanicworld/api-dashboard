@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import ApiCard from '../../components/ApiCard/ApiCard'
 import SearchBar from '../../components/SearchBar/SearchBar'
-import style from './Dashboard.module.css'
+// import style from './Dashboard.module.css'
 
 function Dashboard() {
 
@@ -16,9 +16,7 @@ function Dashboard() {
     fetch("http://localhost:5000/apis")
       .then(response => response.json())
       .then(data => {
-        setApiCardList(data)
-        setBookmarkList()
-      
+        setApiCardList(data)      
       })
 
   }
@@ -38,11 +36,11 @@ function Dashboard() {
         <div className={`row d-flex  justify-content-center `}>
           {apiCardList.filter((item) => {
             if (item.bookmarked) {
-              console.log(item)
               return item
-            }
+            } 
+            return 0
           }).map((item) => {
-            return <ApiCard item={item} />
+            return <ApiCard setApiCardList={setApiCardList} item={item} key={item.id} />
           })}
         </div>
       </div>
@@ -52,11 +50,11 @@ function Dashboard() {
         <div className={`row d-flex  justify-content-center `}>
           {apiCardList.filter((item) => {
             if (!item.bookmarked) {
-              console.log(item)
               return item
             }
+            return 0
           }).map((item) => {
-            return <ApiCard item={item} />
+            return <ApiCard setApiCardList={setApiCardList} item={item} key={item.id} />
           })}
         </div>
       </div>
