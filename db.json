@@ -4,7 +4,7 @@
       "title": "Hunter",
       "category": "Data access",
       "info": "Hunter API makes it easy to find or verify professional email adress",
-      "bookmarked": true,
+      "bookmarked": false,
       "image": "hunter",
       "id": 1
     },
@@ -36,7 +36,7 @@
       "title": "Typeform",
       "category": "Data access",
       "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
-      "bookmarked": true,
+      "bookmarked": false,
       "image": "typeform",
       "id": 5
     },
@@ -60,7 +60,7 @@
       "title": "Asana",
       "category": "Data access",
       "info": "Customize the Asana experience, leverage your data with the Asana API",
-      "bookmarked": true,
+      "bookmarked": false,
       "image": "asana",
       "id": 8
     },
@@ -68,7 +68,7 @@
       "title": "Mailchimp",
       "category": "Data access",
       "info": "Email marketing, ads, landing pages, and CRM tools to grow your business on your terms.",
-      "bookmarked": true,
+      "bookmarked": false,
       "image": "mailchimp",
       "id": 9
     }
