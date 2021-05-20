@@ -13,9 +13,8 @@ function Buttons({ item, apiCardList, setApiCardList }) {
       },
     })
       .then(res => res.json())
-      .then(data => {
-        console.log(data)
-      
+      .then(data => { 
+        
       })
   }
 
@@ -39,8 +38,8 @@ function Buttons({ item, apiCardList, setApiCardList }) {
   }
   return (
     <>
-      <Button onClick={bookmarkHandler} className={`col-4 p-1 m-2 ${style.bookmarks}`} >Bookmarks</Button>
-      <Button className={`col-4 p-1 m-2 ${style.allDocs}`} >All Docs</Button>
+      <Button onClick={bookmarkHandler} className={`${style.bookmarks} col-4`} >Bookmarks</Button>
+      <Button className={` ${style.allDocs} col-4  `} >All Docs</Button>
     </>
   )
 }

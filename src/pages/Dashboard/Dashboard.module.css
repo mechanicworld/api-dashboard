@@ -1,3 +1,22 @@
 *{
   box-sizing:border-box;
 }
+
+
+:root {
+  --darkBlue: rgb(23, 23, 49) ;
+  --white: rgb(255, 255, 255);
+}
+
+.title{
+font-size: 1.2rem;
+font-weight: 600;
+color: var(--darkBlue)
+
+}
+
+.subtitle{
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--darkBlue)
+}

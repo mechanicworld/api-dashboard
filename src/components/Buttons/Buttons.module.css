@@ -11,7 +11,7 @@
   background-color: var(--darkBlue) !important;
   border-color: var(--darkBlue)!important;
   color: var(--white) !important;
-  width: 50%;
+  height: 50%;
   font-size: 0.9rem !important;
   
 }
@@ -20,7 +20,7 @@
   background-color: var(--white) !important;
   border-color: var(--white)!important;
   color: var(--darkBlue) !important;
-  width: 50%;
+  height: 50%;
   font-size: 0.9rem !important;
 }
 

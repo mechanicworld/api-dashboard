@@ -36,7 +36,7 @@
       "title": "Typeform",
       "category": "Data access",
       "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "typeform",
       "id": 5
     },
@@ -52,7 +52,7 @@
       "title": "Meteorologisk Institutt",
       "category": "Data access",
       "info": "Wheather and climate data.",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "MI",
       "id": 7
     },
@@ -60,7 +60,7 @@
       "title": "Asana",
       "category": "Data access",
       "info": "Customize the Asana experience, leverage your data with the Asana API",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "asana",
       "id": 8
     },
@@ -68,7 +68,7 @@
       "title": "Mailchimp",
       "category": "Data access",
       "info": "Email marketing, ads, landing pages, and CRM tools to grow your business on your terms.",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "mailchimp",
       "id": 9
     }
