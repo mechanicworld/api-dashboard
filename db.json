@@ -5,7 +5,7 @@
       "category": "Data access",
       "info": "Hunter API makes it easy to find or verify professional email adress",
       "bookmarked": true,
-      "image": "../../assets/test.png",
+      "image": "hunter",
       "id": 1
     },
     {
@@ -13,7 +13,7 @@
       "category": "Data access",
       "info": "Send and receive SMS and MMS messages as well as query meta-data about text messages",
       "bookmarked": true,
-      "image": "test",
+      "image": "twilio",
       "id": 2
     },
     {
@@ -21,7 +21,7 @@
       "category": "Automation",
       "info": "Hunter API makes it easy to find or verify professional email adress",
       "bookmarked": false,
-      "image": "../../assets/test.png",
+      "image": "whatsapp",
       "id": 3
     },
     {
@@ -29,7 +29,7 @@
       "category": "Data access",
       "info": "A suite of payment APIs that powers commerce for online businesses of all sizes.",
       "bookmarked": false,
-      "image": "test",
+      "image": "stripe",
       "id": 4
     },
     {
@@ -37,7 +37,7 @@
       "category": "Data access",
       "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
       "bookmarked": false,
-      "image": "test",
+      "image": "typeform",
       "id": 5
     },
     {
@@ -45,7 +45,7 @@
       "category": "Data access",
       "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
       "bookmarked": false,
-      "image": "test",
+      "image": "blablacar",
       "id": 6
     },
     {
@@ -53,7 +53,7 @@
       "category": "Data access",
       "info": "Wheather and climate data.",
       "bookmarked": false,
-      "image": "test",
+      "image": "MI",
       "id": 7
     },
     {
@@ -61,15 +61,15 @@
       "category": "Data access",
       "info": "Customize the Asana experience, leverage your data with the Asana API",
       "bookmarked": false,
-      "image": "test",
+      "image": "asana",
       "id": 8
     },
     {
-      "title": "Ma'lchimp",
+      "title": "Mailchimp",
       "category": "Data access",
       "info": "Email marketing, ads, landing pages, and CRM tools to grow your business on your terms.",
       "bookmarked": false,
-      "image": "test",
+      "image": "mailchimp",
       "id": 9
     }
   ]

@@ -4,9 +4,10 @@ import Card from 'react-bootstrap/Card'
 import Buttons from '../Buttons/Buttons'
 
 import style from './ApiCard.module.css'
-import image from '../../assets/test.png'
+// import image from '../../assets/test.png'
 
 function ApiCard( {item, apiCardList, setApiCardList} ) {
+  const path = "test"
 
   return (
     <>
@@ -14,7 +15,8 @@ function ApiCard( {item, apiCardList, setApiCardList} ) {
         <Card.Body className={` ${style.body} `}>
           <div className="row">
             <div className="col-3">
-              <img src= {image} alt={`${item.title}`} />
+              <img src= {`/img/${item.image}.png`} alt={`${item.title}`} />
+              {/* <img src= {image} alt={`${item.title}`} /> */}
             </div>
             <div className="col-9">
               <Card.Title> { item.title } </Card.Title>
