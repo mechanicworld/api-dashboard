@@ -1,34 +1,41 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Button from 'react-bootstrap/Button'
 import style from './Buttons.module.css'
 
-function Buttons({ item, setApiCardList }) {
-
-  const [bookmarked, setBookmarked] = useState(item.bookmarked)
+function Buttons({ item, apiCardList, setApiCardList }) {
 
   const updateApiList = () => {
     fetch(`http://localhost:5000/apis/${item.id}`, {
-      method:'PUT',
-      body: JSON.stringify({ ...item, bookmarked:bookmarked }),
+      method: 'PUT',
+      body: JSON.stringify({ ...item, bookmarked: !item.bookmarked }),
       headers: {
         "Content-type": "application/json; charset=UTF-8"
       },
     })
       .then(res => res.json())
-      .then(data => console.log(data))
+      .then(data => {
+        console.log(data)
+      
+      })
   }
 
-  const updateApiStatus = () => {
-    // TODO
+  const updateApiState = () => {
+    const updatedApiState = apiCardList.map((each) => {
+
+      if (each.id === item.id) {
+        each.bookmarked = !item.bookmarked
+        return each
+      }
+      return each
+    })
+    setApiCardList(updatedApiState)
   }
 
-  const bookmarkHandler = async () => {
-    await setBookmarked(!bookmarked)   
-    await updateApiList()
+  const bookmarkHandler = () => {
+    
+    updateApiList()
+    updateApiState()
 
-    // console.log(item.id)
-    // console.log(item.bookmarked)
-    // console.log({ ...item, bookmarked:bookmarked })
   }
   return (
     <>

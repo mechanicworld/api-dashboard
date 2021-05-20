@@ -4,7 +4,7 @@
       "title": "Hunter",
       "category": "Data access",
       "info": "Hunter API makes it easy to find or verify professional email adress",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "../../assets/test.png",
       "id": 1
     },
@@ -12,9 +12,65 @@
       "title": "Twilio",
       "category": "Data access",
       "info": "Send and receive SMS and MMS messages as well as query meta-data about text messages",
-      "bookmarked": false,
+      "bookmarked": true,
       "image": "test",
       "id": 2
+    },
+    {
+      "title": "WhatsApp Business",
+      "category": "Automation",
+      "info": "Hunter API makes it easy to find or verify professional email adress",
+      "bookmarked": false,
+      "image": "../../assets/test.png",
+      "id": 3
+    },
+    {
+      "title": "Stripe",
+      "category": "Data access",
+      "info": "A suite of payment APIs that powers commerce for online businesses of all sizes.",
+      "bookmarked": false,
+      "image": "test",
+      "id": 4
+    },
+    {
+      "title": "Typeform",
+      "category": "Data access",
+      "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
+      "bookmarked": false,
+      "image": "test",
+      "id": 5
+    },
+    {
+      "title": "BlaBlaCar",
+      "category": "Data access",
+      "info": "Create, retrieve, update, and delete your typeforms, themes, and images",
+      "bookmarked": false,
+      "image": "test",
+      "id": 6
+    },
+    {
+      "title": "Meteorologisk Institutt",
+      "category": "Data access",
+      "info": "Wheather and climate data.",
+      "bookmarked": false,
+      "image": "test",
+      "id": 7
+    },
+    {
+      "title": "Asana",
+      "category": "Data access",
+      "info": "Customize the Asana experience, leverage your data with the Asana API",
+      "bookmarked": false,
+      "image": "test",
+      "id": 8
+    },
+    {
+      "title": "Ma'lchimp",
+      "category": "Data access",
+      "info": "Email marketing, ads, landing pages, and CRM tools to grow your business on your terms.",
+      "bookmarked": false,
+      "image": "test",
+      "id": 9
     }
   ]
 }

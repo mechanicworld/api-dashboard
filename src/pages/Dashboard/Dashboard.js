@@ -6,7 +6,8 @@ import SearchBar from '../../components/SearchBar/SearchBar'
 function Dashboard() {
 
   const [apiCardList, setApiCardList] = useState([]);
-  const [bookmarkList, setBookmarkList] = useState([]);
+  const [searchInput, setSearchInput] = useState("")
+
 
   useEffect(() => {
     fetchApiCards()
@@ -29,18 +30,20 @@ function Dashboard() {
         </div>
       </div>
       <div className={`row justify-content-center `}>
-        <SearchBar className={`col-12`} />
+        <SearchBar  searchInput={searchInput} setSearchInput={setSearchInput} className={`col-12`} />
       </div>
       <div>
         <p>Featured APIs of this week</p>
         <div className={`row d-flex  justify-content-center `}>
-          {apiCardList.filter((item) => {
-            if (item.bookmarked) {
-              return item
-            } 
+          {apiCardList.filter((each) => {
+            let regex = new RegExp (`${searchInput}`)
+            if(regex !== "" && regex.test(each.title.toLowerCase())){
+              console.log(regex)
+              return 1
+            }
             return 0
           }).map((item) => {
-            return <ApiCard setApiCardList={setApiCardList} item={item} key={item.id} />
+            return <ApiCard apiCardList={apiCardList} setApiCardList={setApiCardList} item={item} key={item.id} />
           })}
         </div>
       </div>
@@ -49,12 +52,12 @@ function Dashboard() {
         <p>Your Bookmarks</p>
         <div className={`row d-flex  justify-content-center `}>
           {apiCardList.filter((item) => {
-            if (!item.bookmarked) {
+            if (item.bookmarked === true) {
               return item
             }
             return 0
           }).map((item) => {
-            return <ApiCard setApiCardList={setApiCardList} item={item} key={item.id} />
+            return <ApiCard apiCardList={apiCardList} setApiCardList={setApiCardList} item={item} key={item.id} />
           })}
         </div>
       </div>
